@@ -1,9 +1,14 @@
+import Head from "next/head";
 import AppLayout from "../components/AppLayout";
+import FollowList from "../components/FollowList";
 
 const Home = () => {
     return (
         <AppLayout>
-        <div>Hello, Next!</div>
+        <Head>
+            <title>NodeBird</title>
+        </Head>
+        <FollowList></FollowList>
         </AppLayout>
     )
 }
